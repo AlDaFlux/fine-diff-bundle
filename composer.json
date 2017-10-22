@@ -10,11 +10,8 @@
   "license": "MIT",
   "require": {
     "php": ">=5.4",
-    "symfony/finder":           "~2.3 || ~3.0",
-    "symfony/filesystem":       "~2.3 || ~3.0",
-    "symfony/options-resolver": "~2.3 || ~3.0",
-    "symfony/framework-bundle": "~2.3 || ~3.0",
-    "twig/twig":                "~1.16|| ~2.0"
+    "twig/twig": "^2.0",
+    "symfony/framework-bundle": "^3.0"
   },
   "require-dev": {
     "phpunit/phpunit":          "~4.4"
@@ -22,11 +19,6 @@
   "autoload": {
     "psr-4": {
       "WebtownPHP\\Bundle\\FineDiffBundle\\": ""
-    }
-  },
-  "extra": {
-    "branch-alias": {
-      "dev-master": "1.4-dev"
     }
   }
 }
