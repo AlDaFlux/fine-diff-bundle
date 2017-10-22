@@ -19,7 +19,7 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('webtown_php_fine_diff');
+        $rootNode = $treeBuilder->root('greywolfs_fine_diff');
 
         // Here you should define the parameters that are allowed to
         // configure your bundle. See the documentation linked above for

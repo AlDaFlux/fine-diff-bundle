@@ -2,6 +2,7 @@
 
 Original fine diff library:
 
+- https://github.com/webtown-php/fine-diff-bundle
 - https://github.com/gorhill/PHP-FineDiff
 - http://www.raymondhill.net/finediff/viewdiff-ex.php
 
@@ -12,14 +13,14 @@ Original fine diff library:
 Run in command line:
 
 ```shell
-$ composer require webtown-php/fine-diff-bundle
+$ composer require greywolfs/fine-diff-bundle
 ```
 
 Or add with hand to composer.json:
 
 ```json
     "require": {
-        "greywolfs/fine-diff-bundle": "~1.4"
+        "greywolfs/fine-diff-bundle": "~1.10"
     }
 ```
 
@@ -35,7 +36,7 @@ Add the app
 	{
 		$bundles = array(
 			// ...
-			new WebtownPHP\FineDiffBundle\WebtownPHPFineDiffBundle(),
+			new Greywolfs\FineDiffBundle\GreywolfsPHPFineDiffBundle(),
 		);
 	}
 ```
@@ -47,7 +48,7 @@ Optional. You can change the default granularity.
 ```yml
 # app/config/config.yml
 
-webtown_php_fine_diff:
+greywolfs_fine_diff:
     default_granularity: character # This is the default granularity. Alternatives: 'word', 'sentence' and 'paragraph'
 ```
 

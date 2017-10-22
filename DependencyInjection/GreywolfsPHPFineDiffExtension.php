@@ -32,13 +32,13 @@ class GreywolfsPHPFineDiffExtension extends Extension
 
         $granularities = Configuration::getGranularities();
         foreach ($granularities as $key => $value) {
-            $name = sprintf('webtown_php_fine_diff.granularity.%s', $key);
+            $name = sprintf('greywolfs_fine_diff.granularity.%s', $key);
             $container->setParameter($name, $value);
         }
         $granularity = $granularities[$config['default_granularity']];
-        $container->setParameter('webtown_php_fine_diff.default_granularity', $granularity);
+        $container->setParameter('greywolfs_fine_diff.default_granularity', $granularity);
 
-        $definition = $container->getDefinition('webtown_php_fine_diff.twig.extension');
+        $definition = $container->getDefinition('greywolfs_fine_diff.twig.extension');
         $definition->replaceArgument(0, $granularity);
     }
 }

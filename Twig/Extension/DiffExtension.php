@@ -85,6 +85,6 @@ class DiffExtension extends Twig_Extension
      */
     public function getName()
     {
-        return 'webtown_php_fine_diff.twig_extension';
+        return 'greywolfs_fine_diff.twig_extension';
     }
 }

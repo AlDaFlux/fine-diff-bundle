@@ -22,7 +22,7 @@ class FineDiffOps
         } else if ($opcode === 'd') {
             $edits[] = new FineDiffDeleteOp($from_len);
         } else /* if ( $opcode === 'i' ) */ {
-            $edits[] = new FineDiffInsertOp(substr($from, $from_offset, $from_len));
+            $edits[] = new FineDiffInsertOp(mb_substr($from, $from_offset, $from_len));
         }
     }
 
