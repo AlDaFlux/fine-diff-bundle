@@ -19,7 +19,7 @@
     },
     "autoload": {
       "psr-4": {
-        "WebtownPHP\\Bundle\\FineDiffBundle\\": ""
+        "Greywolfs\\Bundle\\FineDiffBundle\\": ""
       }
     }
 }
