@@ -1,8 +1,8 @@
 <?php
 
-namespace Greywolfs\Bundle\FineDiffBundle\DependencyInjection;
+namespace Greywolfs\FineDiffBundle\DependencyInjection;
 
-use Greywolfs\Bundle\FineDiffBundle\FineDiff\FineDiff;
+use Greywolfs\FineDiffBundle\FineDiff\FineDiff;
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
 

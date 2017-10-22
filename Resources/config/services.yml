@@ -1,6 +1,6 @@
 services:
     greywolfs_fine_diff.twig.extension:
-        class: Greywolfs\Bundle\FineDiffBundle\Twig\Extension\DiffExtension
+        class: Greywolfs\FineDiffBundle\Twig\Extension\DiffExtension
         arguments:
             - # from config: greywolfs_fine_diff.default_granularity
         tags:

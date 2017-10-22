@@ -1,6 +1,6 @@
 <?php
 
-namespace Greywolfs\Bundle\FineDiffBundle\FineDiff;
+namespace Greywolfs\FineDiffBundle\FineDiff;
 
 interface FineDiffOp
 {

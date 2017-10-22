@@ -1,6 +1,6 @@
 <?php
 
-namespace Greywolfs\Bundle\FineDiffBundle;
+namespace Greywolfs\FineDiffBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

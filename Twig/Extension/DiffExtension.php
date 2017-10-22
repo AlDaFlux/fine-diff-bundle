@@ -1,11 +1,11 @@
 <?php
 
-namespace Greywolfs\Bundle\FineDiffBundle\Twig\Extension;
+namespace Greywolfs\FineDiffBundle\Twig\Extension;
 
-use Greywolfs\Bundle\FineDiffBundle\FineDiff\FineDiff;
+use Greywolfs\FineDiffBundle\FineDiff\FineDiff;
 use Twig_Extension;
 use Twig_SimpleFunction;
-use Greywolfs\Bundle\FineDiffBundle\DependencyInjection\Configuration;
+use Greywolfs\FineDiffBundle\DependencyInjection\Configuration;
 
 class DiffExtension extends Twig_Extension
 {

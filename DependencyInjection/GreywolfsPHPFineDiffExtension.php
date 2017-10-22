@@ -1,6 +1,6 @@
 <?php
 
-namespace Greywolfs\Bundle\FineDiffBundle\DependencyInjection;
+namespace Greywolfs\FineDiffBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Exception\InvalidConfigurationException;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
