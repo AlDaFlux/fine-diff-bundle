@@ -1,24 +1,25 @@
 {
-  "name": "greywolfs/fine-diff-bundle",
-  "type": "symfony-bundle",
-  "description": "gorhill/PHP-FineDiff Symfony3 Bundle implementation",
-  "keywords": [
-    "diff",
-    "string compare"
-  ],
-  "homepage": "https://github.com/greywolfs/fine-diff-bundle",
-  "license": "MIT",
-  "require": {
-    "php": ">=5.4",
-    "twig/twig": "^2.0",
-    "symfony/framework-bundle": "^3.0"
-  },
-  "require-dev": {
-    "phpunit/phpunit":          "~4.4"
-  },
-  "autoload": {
-    "psr-4": {
-      "WebtownPHP\\Bundle\\FineDiffBundle\\": ""
+    "name": "greywolfs/fine-diff-bundle",
+    "description": "FineDiff Symfony3 Bundle implementation",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "type": "symfony-bundle",
+    "keywords": [
+      "diff",
+      "string compare"
+    ],
+    "homepage": "https://github.com/greywolfs/fine-diff-bundle",
+    "require": {
+      "php": "^5.4 || ^7.0",
+      "twig/twig": "^2.0",
+      "symfony/framework-bundle": "^3.0"
+    },
+    "require-dev": {
+      "phpunit/phpunit":          "~4.4"
+    },
+    "autoload": {
+      "psr-4": {
+        "WebtownPHP\\Bundle\\FineDiffBundle\\": ""
+      }
     }
-  }
 }
