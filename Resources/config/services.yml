@@ -1,7 +1,7 @@
 services:
-    webtown_php_fine_diff.twig.extension:
-        class: WebtownPHP\Bundle\FineDiffBundle\Twig\Extension\DiffExtension
+    greywolfs_fine_diff.twig.extension:
+        class: Greywolfs\Bundle\FineDiffBundle\Twig\Extension\DiffExtension
         arguments:
-            - # from config: webtown_php_fine_diff.default_granularity
+            - # from config: greywolfs_fine_diff.default_granularity
         tags:
             - { name: twig.extension }

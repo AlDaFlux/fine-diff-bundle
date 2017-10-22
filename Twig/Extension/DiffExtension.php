@@ -1,9 +1,10 @@
 <?php
 
-namespace WebtownPHP\Bundle\FineDiffBundle\Twig\Extension;
+namespace Greywolfs\Bundle\FineDiffBundle\Twig\Extension;
 
-use GorHill\FineDiff\FineDiff;
-use WebtownPHP\Bundle\FineDiffBundle\DependencyInjection\Configuration;
+use Greywolfs\Bundle\FineDiffBundle\FineDiff\FineDiff;
+use Twig_SimpleFunction;
+use Greywolfs\Bundle\FineDiffBundle\DependencyInjection\Configuration;
 
 class DiffExtension extends \Twig_Extension
 {
@@ -24,8 +25,8 @@ class DiffExtension extends \Twig_Extension
     public function getFunctions()
     {
         return [
-            new \Twig_SimpleFunction('renderDiff', [$this, 'getDiff'], ['is_safe' => ['html']]),
-            new \Twig_SimpleFunction('renderHtmlTextDiff', [$this, 'getHtmlTextDiff'], ['is_safe' => ['html']]),
+            new Twig_SimpleFunction('renderDiff', [$this, 'getDiff'], ['is_safe' => ['html']]),
+            new Twig_SimpleFunction('renderHtmlTextDiff', [$this, 'getHtmlTextDiff'], ['is_safe' => ['html']]),
         ];
     }
 

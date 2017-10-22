@@ -1,8 +1,8 @@
 <?php
 
-namespace WebtownPHP\Bundle\FineDiffBundle\DependencyInjection;
+namespace Greywolfs\Bundle\FineDiffBundle\DependencyInjection;
 
-use GorHill\FineDiff\FineDiff;
+use Greywolfs\Bundle\FineDiffBundle\FineDiff\FineDiff;
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
 

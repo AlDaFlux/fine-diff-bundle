@@ -1,6 +1,6 @@
 <?php
 
-namespace WebtownPHP\Bundle\FineDiffBundle\DependencyInjection;
+namespace Greywolfs\Bundle\FineDiffBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Exception\InvalidConfigurationException;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -13,7 +13,7 @@ use Symfony\Component\DependencyInjection\Loader;
  *
  * To learn more see {@link http://symfony.com/doc/current/cookbook/bundles/extension.html}
  */
-class WebtownPHPFineDiffExtension extends Extension
+class GreywolfsPHPFineDiffExtension extends Extension
 {
     /**
      * {@inheritdoc}

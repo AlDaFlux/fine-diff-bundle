@@ -1,9 +1,9 @@
 <?php
 
-namespace WebtownPHP\Bundle\FineDiffBundle\Tests\Twig\Extension;
+namespace Greywolfs\Bundle\FineDiffBundle\Tests\Twig\Extension;
 
-use GorHill\FineDiff\FineDiff;
-use WebtownPHP\Bundle\FineDiffBundle\Twig\Extension\DiffExtension;
+use Greywolfs\Bundle\FineDiffBundle\FineDiff\FineDiff;
+use Greywolfs\Bundle\FineDiffBundle\Twig\Extension\DiffExtension;
 
 class DiffExtensionTest extends \PHPUnit_Framework_TestCase
 {
