@@ -11,7 +11,7 @@
     "homepage": "https://github.com/greywolfs/fine-diff-bundle",
     "require": {
       "php": "^5.4 || ^7.0",
-      "twig/twig": "~2.0",
+      "twig/extensions": "^1.5",
       "symfony/framework-bundle": "~3.0"
     },
     "require-dev": {
