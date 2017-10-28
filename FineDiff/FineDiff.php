@@ -162,12 +162,12 @@ class FineDiff
     public static $paragraphGranularity = array(
         FineDiff::paragraphDelimiters
     );
-    const sentenceDelimiters = ".\n\r";
+    const sentenceDelimiters = "\.\n\r";
     public static $sentenceGranularity = array(
         FineDiff::paragraphDelimiters,
         FineDiff::sentenceDelimiters
     );
-    const wordDelimiters = " \t.\n\r";
+    const wordDelimiters = " \t\.\n\r";
     public static $wordGranularity = array(
         FineDiff::paragraphDelimiters,
         FineDiff::sentenceDelimiters,
@@ -182,8 +182,8 @@ class FineDiff
     );
 
     public static $textStack = array(
-        ".",
-        " \t.\n\r",
+        "\.",
+        " \t\.\n\r",
         ""
     );
 
@@ -473,17 +473,16 @@ class FineDiff
             return $chars;
         }
         $fragments = array();
-        $start = $end = 0;
-        for (; ;) {
-            $end += strcspn($text, $delimiters, $end);
-            $end += strspn($text, $delimiters, $end);
-            if ($end === $start) {
-                break;
-            }
-            $fragments[$start] = mb_substr($text, $start, $end - $start);
-            $start = $end;
+        $start = 0;
+        while (preg_match("/^([^$delimiters]+)([$delimiters]*)/", $text, $matches)) {
+            $fragment = $matches[1] . (isset($matches[2]) ? $matches[2] : '');
+            $fragments[$start] = $fragment;
+            $length = mb_strlen($fragment);
+            $text = mb_substr($text, $length);
+            $start += $length;
         }
         $fragments[$start] = '';
+
         return $fragments;
     }
 
