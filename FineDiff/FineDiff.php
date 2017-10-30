@@ -474,14 +474,21 @@ class FineDiff
         }
         $fragments = array();
         $start = 0;
-        while (preg_match("/^([^$delimiters]+)([$delimiters]*)/", $text, $matches)) {
-            $fragment = $matches[1] . (isset($matches[2]) ? $matches[2] : '');
+        do {
+            preg_match("/^([^$delimiters]*)/", $text, $matches);
+            $fragment1 = isset($matches[1]) ? $matches[1] : '';
+            $length1 = mb_strlen($fragment1);
+            $text = mb_substr($text, $length1);
+
+            preg_match("/^([$delimiters]*)/", $text, $matches);
+            $fragment2 = isset($matches[1]) ? $matches[1] : '';
+            $length2 = mb_strlen($fragment2);
+            $text = mb_substr($text, $length2);
+
+            $fragment = $fragment1 . $fragment2;
             $fragments[$start] = $fragment;
-            $length = mb_strlen($fragment);
-            $text = mb_substr($text, $length);
-            $start += $length;
-        }
-        $fragments[$start] = '';
+            $start += $length1 + $length2;
+        } while (!empty($fragment));
 
         return $fragments;
     }
