@@ -1,8 +1,8 @@
 <?php
 
-namespace Greywolfs\FineDiffBundle\DependencyInjection;
+namespace AlDaFlux\FineDiffBundle\DependencyInjection;
 
-use Greywolfs\FineDiffBundle\FineDiff\FineDiff;
+use AlDaFlux\FineDiffBundle\FineDiff\FineDiff;
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
 
@@ -19,7 +19,7 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('greywolfs_fine_diff');
+        $rootNode = $treeBuilder->root('AlDaFlux_fine_diff');
 
         // Here you should define the parameters that are allowed to
         // configure your bundle. See the documentation linked above for

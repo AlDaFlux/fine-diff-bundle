@@ -1,7 +1,7 @@
 services:
-    greywolfs_fine_diff.twig.extension:
-        class: Greywolfs\FineDiffBundle\Twig\Extension\DiffExtension
+    AlDaFlux_fine_diff.twig.extension:
+        class: AlDaFlux\FineDiffBundle\Twig\Extension\DiffExtension
         arguments:
-            - # from config: greywolfs_fine_diff.default_granularity
+            - # from config: AlDaFlux_fine_diff.default_granularity
         tags:
             - { name: twig.extension }

@@ -1,11 +1,11 @@
 <?php
 
-namespace Greywolfs\FineDiffBundle\Twig\Extension;
+namespace AlDaFlux\FineDiffBundle\Twig\Extension;
 
-use Greywolfs\FineDiffBundle\FineDiff\FineDiff;
+use AlDaFlux\FineDiffBundle\FineDiff\FineDiff;
 use Twig_Extension;
 use Twig_SimpleFunction;
-use Greywolfs\FineDiffBundle\DependencyInjection\Configuration;
+use AlDaFlux\FineDiffBundle\DependencyInjection\Configuration;
 
 class DiffExtension extends Twig_Extension
 {
@@ -85,6 +85,6 @@ class DiffExtension extends Twig_Extension
      */
     public function getName()
     {
-        return 'greywolfs_fine_diff.twig_extension';
+        return 'AlDaFlux_fine_diff.twig_extension';
     }
 }

@@ -13,14 +13,14 @@ Original fine diff library:
 Run in command line:
 
 ```shell
-$ composer require greywolfs/fine-diff-bundle
+$ composer require AlDaFlux/fine-diff-bundle
 ```
 
 Or add with hand to composer.json:
 
 ```json
     "require": {
-        "greywolfs/fine-diff-bundle": "~1.10"
+        "AlDaFlux/fine-diff-bundle": "~1.10"
     }
 ```
 
@@ -36,7 +36,7 @@ Add the app
 	{
 		$bundles = array(
 			// ...
-			new Greywolfs\FineDiffBundle\GreywolfsPHPFineDiffBundle(),
+			new AlDaFlux\FineDiffBundle\AlDaFluxPHPFineDiffBundle(),
 		);
 	}
 ```
@@ -48,7 +48,7 @@ Optional. You can change the default granularity.
 ```yml
 # app/config/config.yml
 
-greywolfs_fine_diff:
+AlDaFlux_fine_diff:
     default_granularity: character # This is the default granularity. Alternatives: 'word', 'sentence' and 'paragraph'
 ```
 

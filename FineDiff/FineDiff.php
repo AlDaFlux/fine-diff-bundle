@@ -1,10 +1,10 @@
 <?php
 
-namespace Greywolfs\FineDiffBundle\FineDiff;
+namespace AlDaFlux\FineDiffBundle\FineDiff;
 
 /**
  * Class FineDiff
- * @package Greywolfs\FineDiffBundle\FineDiff
+ * @package AlDaFlux\FineDiffBundle\FineDiff
  */
 class FineDiff
 {

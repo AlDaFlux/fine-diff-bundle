@@ -1,9 +1,9 @@
 <?php
 
-namespace Greywolfs\FineDiffBundle\Tests\Twig\Extension;
+namespace AlDaFlux\FineDiffBundle\Tests\Twig\Extension;
 
-use Greywolfs\FineDiffBundle\FineDiff\FineDiff;
-use Greywolfs\FineDiffBundle\Twig\Extension\DiffExtension;
+use AlDaFlux\FineDiffBundle\FineDiff\FineDiff;
+use AlDaFlux\FineDiffBundle\Twig\Extension\DiffExtension;
 
 class DiffExtensionTest extends \PHPUnit_Framework_TestCase
 {

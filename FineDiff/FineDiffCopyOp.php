@@ -1,6 +1,6 @@
 <?php
 
-namespace Greywolfs\FineDiffBundle\FineDiff;
+namespace AlDaFlux\FineDiffBundle\FineDiff;
 
 class FineDiffCopyOp implements FineDiffOp
 {

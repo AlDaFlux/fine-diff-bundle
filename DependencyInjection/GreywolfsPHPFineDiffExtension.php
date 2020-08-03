@@ -1,6 +1,6 @@
 <?php
 
-namespace Greywolfs\FineDiffBundle\DependencyInjection;
+namespace AlDaFlux\FineDiffBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Exception\InvalidConfigurationException;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -13,7 +13,7 @@ use Symfony\Component\DependencyInjection\Loader;
  *
  * To learn more see {@link http://symfony.com/doc/current/cookbook/bundles/extension.html}
  */
-class GreywolfsPHPFineDiffExtension extends Extension
+class AlDaFluxPHPFineDiffExtension extends Extension
 {
     /**
      * {@inheritdoc}
@@ -32,13 +32,13 @@ class GreywolfsPHPFineDiffExtension extends Extension
 
         $granularities = Configuration::getGranularities();
         foreach ($granularities as $key => $value) {
-            $name = sprintf('greywolfs_fine_diff.granularity.%s', $key);
+            $name = sprintf('AlDaFlux_fine_diff.granularity.%s', $key);
             $container->setParameter($name, $value);
         }
         $granularity = $granularities[$config['default_granularity']];
-        $container->setParameter('greywolfs_fine_diff.default_granularity', $granularity);
+        $container->setParameter('AlDaFlux_fine_diff.default_granularity', $granularity);
 
-        $definition = $container->getDefinition('greywolfs_fine_diff.twig.extension');
+        $definition = $container->getDefinition('AlDaFlux_fine_diff.twig.extension');
         $definition->replaceArgument(0, $granularity);
     }
 }
