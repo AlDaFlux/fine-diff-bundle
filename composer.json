@@ -11,10 +11,7 @@
     "homepage": "https://github.com/AlDaFlux/fine-diff-bundle",
     "require": {
       "php": "^5.4 || ^7.2",
-      "symfony/framework-bundle": "^4.2|^5.0"
-    },
-    "require-dev": {
-      "phpunit/phpunit":          "~4.4"
+      "symfony/framework-bundle": "^5.0"
     },
     "autoload": {
       "psr-4": {
