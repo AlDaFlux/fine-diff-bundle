@@ -2,7 +2,7 @@
     "name": "aldaflux/fine-diff-bundle",
     "description": "FineDiff Symfony5 Bundle implementation",
     "license": "MIT",
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "type": "symfony-bundle",
     "keywords": [
       "diff",
