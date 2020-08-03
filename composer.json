@@ -1,25 +1,25 @@
 {
-    "name": "greywolfs/fine-diff-bundle",
-    "description": "FineDiff Symfony3 Bundle implementation",
+    "name": "aldaflux/fine-diff-bundle",
+    "description": "FineDiff Symfony5 Bundle implementation",
     "license": "MIT",
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "type": "symfony-bundle",
     "keywords": [
       "diff",
       "string compare"
     ],
-    "homepage": "https://github.com/greywolfs/fine-diff-bundle",
+    "homepage": "https://github.com/AlDaFlux/fine-diff-bundle",
     "require": {
-      "php": "^5.4 || ^7.0",
+      "php": "^5.4 || ^7.2",
       "twig/extensions": "^1.5",
-      "symfony/framework-bundle": "~3.0"
+	  "symfony/framework-bundle": "^4.2|^5.2",
     },
     "require-dev": {
       "phpunit/phpunit":          "~4.4"
     },
     "autoload": {
       "psr-4": {
-        "Greywolfs\\FineDiffBundle\\": ""
+        "Aldaflux\\FineDiffBundle\\": ""
       }
     }
 }
