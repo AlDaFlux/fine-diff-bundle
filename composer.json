@@ -9,9 +9,6 @@
       "string compare"
     ],
     "homepage": "https://github.com/AlDaFlux/fine-diff-bundle",
-    "require": {
-      "symfony/framework-bundle": "^4.2|^5.4"
-    },
     "autoload": {
       "psr-4": {
         "Aldaflux\\FineDiffBundle\\": ""
