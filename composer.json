@@ -14,8 +14,4 @@
         "Aldaflux\\FineDiffBundle\\": ""
       }
     }
-    ,
-    "require": {
-        "symfony/symfony": "^7.1"
-    }
 }
