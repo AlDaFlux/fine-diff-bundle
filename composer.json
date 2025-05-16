@@ -1,0 +1,21 @@
+{
+    "name": "aldaflux/fine-diff-bundle",
+    "description": "FineDiff Symfony Bundle implementation",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "type": "symfony-bundle",
+    "keywords": [
+      "diff",
+      "string compare"
+    ],
+    "homepage": "https://github.com/AlDaFlux/fine-diff-bundle",
+    "autoload": {
+      "psr-4": {
+        "Aldaflux\\FineDiffBundle\\": ""
+      }
+    }
+    ,
+    "require": {
+        "symfony/symfony": "^7.1"
+    }
+}

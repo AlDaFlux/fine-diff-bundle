@@ -1,0 +1,7 @@
+services:
+    Aldaflux_fine_diff.twig.extension:
+        class: Aldaflux\FineDiffBundle\Twig\Extension\DiffExtension
+        arguments:
+            - # from config: Aldaflux_fine_diff.default_granularity
+        tags:
+            - { name: twig.extension }
